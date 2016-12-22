@@ -1,11 +1,12 @@
-
 # {{basename}}
 
 {{description}}
 
 ## Installation
 
-    $ npm install {{basename}}
+```sh
+$ npm install {{basename}}
+```
 
 {{#mit}}
 ## License

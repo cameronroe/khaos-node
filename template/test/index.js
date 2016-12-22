@@ -1,4 +1,5 @@
+import test from 'ava'
 
-var assert = require('assert');
-
-describe('{{basename}}', function(){});
+test('{{basename}}', t => {
+  t.is(true)
+})

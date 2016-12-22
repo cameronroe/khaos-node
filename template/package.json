@@ -5,8 +5,27 @@
   "version": "0.0.0",{{#mit}}
   "license": "MIT",{{/mit}}
   "main": "lib/index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENV=development lightpack-server",
+    "build": "NODE_ENV=production lightpack",
+    "postinstall": "npm run build",
+    "lint": "eslint *.js"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "react",
+      "stage-1"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "2.x"
+    "babel-preset-latest": "6.x",
+    "babel-preset-react": "6.x",
+    "babel-preset-stage-1": "6.x",
+    "lightpack": "1.x",
+    "eslint": "3.x",
+    "ava": "0.x"
   }
 }
